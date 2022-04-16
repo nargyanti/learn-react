@@ -28,6 +28,7 @@ To launch the website, we can change the directory first with `cd web-reactku` a
 ## React Project Structure
 
 After we create new project, we will have the file structure like this.
+
 ![File structure](images/file_structure.png)
 
 The are 3 main folders, namely:
