@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import List from './List';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import List from './components/List';
 
 class App extends Component {
   render() {
@@ -14,4 +14,6 @@ class App extends Component {
       </div>
     );
   }
-} export default App;
+}
+
+export default App;

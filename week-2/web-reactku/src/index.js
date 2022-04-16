@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
-const HelloComponent = () => {
-  return <p>Hello Component</p>
-}
+import HelloComponent from '../src/components/HelloComponent';
 
 class StateFullComponent extends React.Component {
   render() {
@@ -13,4 +10,5 @@ class StateFullComponent extends React.Component {
   }
 }
 
-ReactDOM.render(<StateFullComponent />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<HelloComponent />, document.getElementById("root"));
