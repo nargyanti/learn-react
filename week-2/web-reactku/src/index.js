@@ -10,5 +10,5 @@ class StateFullComponent extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<HelloComponent />, document.getElementById("root"));
 // ReactDOM.render(<HelloComponent />, document.getElementById("root"));
