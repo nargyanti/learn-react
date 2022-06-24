@@ -5,12 +5,12 @@ import App from "./App";
 import configureStore from "./configureStore";
 const store = configureStore();
 function Root() {
-  return (
-    <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <Router>
+                <App />
+            </Router>
+        </Provider>
+    );
 }
 export default Root;
