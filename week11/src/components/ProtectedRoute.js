@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Navigate } from "react-router-dom";
+
 const ProtectedRoute = ({
     component: Component,
     isAuthenticated,
@@ -8,7 +9,7 @@ const ProtectedRoute = ({
 }) => (
     <Route
         {...rest}
-        render={(props) =>
+        render={props =>
             isVerifying ? (
                 <div />
             ) : isAuthenticated ? (
@@ -17,11 +18,12 @@ const ProtectedRoute = ({
                 <Navigate
                     to={{
                         pathname: "/login",
-                        state: { from: props.location },
+                        state: { from: props.location }
                     }}
                 />
             )
         }
     />
 );
+
 export default ProtectedRoute;
